@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Menu - Subasuka Paradise</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-orange': '#FF6B6B',
+                        'brand-teal': '#11998e',
+                        'brand-dark': '#1a202c',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation (Solid Background for subpage) -->
+    <nav class="w-full z-50 bg-white shadow-sm py-4 sticky top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="logo-opt.png" alt="Subasuka Paradise Logo" class="h-12 w-12 rounded-full object-cover shadow-md" />
+                        <div class="flex flex-col leading-tight">
+                            <span class="text-xl font-serif font-bold text-gray-900 tracking-wide">Subasuka Paradise</span>
+                            <span class="text-xs font-sans font-normal tracking-widest text-orange-400 uppercase">Resto &amp; Cafe</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-700 font-medium hover:text-orange-500 transition-colors">Kembali ke Beranda</a>
+                    <a href="index.html#contact" class="px-6 py-2 bg-orange-500 text-white rounded-full font-semibold hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/30">Reservasi</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="relative bg-brand-dark py-20 text-white text-center overflow-hidden">
+        <!-- Abstract patterns -->
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark to-transparent"></div>
+        
+        <div class="relative z-10 px-4 reveal-on-scroll">
+            <h1 class="text-5xl font-serif font-bold mb-4">Buku Menu</h1>
+            <p class="text-xl text-gray-300 font-light max-w-2xl mx-auto">Jelajahi sajian autentik khas Kupang dan hidangan laut segar yang kami siapkan khusus untuk Anda.</p>
+        </div>
+    </section>
+
+    <!-- Menu Content -->
+    <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Food Category: Seafood -->
+        <div class="mb-16 reveal-on-scroll">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-500">
+                    <i data-lucide="fish" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-3xl font-bold font-serif text-gray-900">Aneka Seafood (Ikan, Udang, Cumi)</h2>
+                <div class="flex-grow border-b border-gray-200 ml-4 hidden md:block"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Item -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Kerapu / Kakap Bakar Bumbu Rica</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 155.000</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Ikan segar pilihan dibakar dengan bumbu rica-rica pedas khas.</p>
+                </div>
+                <!-- Item -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Kerapu / Kakap Goreng Spesial</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 110.000</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Pilihan saus: Telur Asin, Asam Manis, Saus Inggris, atau Sambal Matah.</p>
+                </div>
+                <!-- Item -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Udang Goreng Spesial</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 96.000</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Pilihan saus: Telur Asin, Saus Mentega, atau Cabe Kering.</p>
+                </div>
+                <!-- Item -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Udang Gandum</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 145.000</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Udang goreng renyah diselimuti gandum gurih.</p>
+                </div>
+                <!-- Item -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Cumi Bakar / Crispy / Saus Singapore</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 85.000</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Cumi segar diolah sesuai selera Anda.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Food Category: Meat & Chicken -->
+        <div class="mb-16 reveal-on-scroll">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center text-teal-600">
+                    <i data-lucide="beef" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-3xl font-bold font-serif text-gray-900">Aneka Daging & Ayam</h2>
+                <div class="flex-grow border-b border-gray-200 ml-4 hidden md:block"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">Best Seller</div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Se'i Sapi Hot Plate</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 79.000</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Daging asap khas Kupang disajikan di atas hot plate (Mentega/Original).</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Daging Sapi Lada Hitam</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 79.000</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Irisan daging sapi empuk dengan bumbu lada hitam yang kuat.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Sate Ayam</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 45.000</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Sate ayam dengan bumbu kacang gurih.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Ayam Goreng Rica / Mentega</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 72.000</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Ayam potong digoreng dengan bumbu pilihan.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Food Category: Noodles & Rice -->
+        <div class="mb-16 reveal-on-scroll">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600">
+                    <i data-lucide="utensils-crossed" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-3xl font-bold font-serif text-gray-900">Mie, Nasi Goreng & Soup</h2>
+                <div class="flex-grow border-b border-gray-200 ml-4 hidden md:block"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Nasi / Mie Goreng (Se'i / Seafood / Special)</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 35.000</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Pilihan nasi atau mie goreng dengan aneka topping lezat.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Soup Asparagus Jagung</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 110.000</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Sup kental hangat dengan asparagus dan jagung manis.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Soup Bakso Ikan Tahu Jepang</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 69.000</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Sup Buntut</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 49.000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Food Category: Vegetables & Local Flavors -->
+        <div class="mb-16 reveal-on-scroll">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                    <i data-lucide="leaf" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-3xl font-bold font-serif text-gray-900">Sayur & Cita Rasa Lokal</h2>
+                <div class="flex-grow border-b border-gray-200 ml-4 hidden md:block"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Cah Bunga Pepaya / Kelor</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 39.000</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Sayuran khas NTT yang ditumis sempurna.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Cap Cay Kuah / Goreng</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 55.000</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Gado-Gado / Tahu Tek</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 30.000 - Rp 35.000</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Tumis Kangkung Hot Plate</h3>
+                        <span class="text-orange-500 font-bold whitespace-nowrap ml-4">Rp 32.000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Drinks Menu -->
+        <div class="mb-16 reveal-on-scroll">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-500">
+                    <i data-lucide="cup-soda" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-3xl font-bold font-serif text-gray-900">Aneka Minuman & Signature</h2>
+                <div class="flex-grow border-b border-gray-200 ml-4 hidden md:block"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Signature -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-orange-500">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4 uppercase tracking-widest text-orange-500 text-sm">Signature Ice</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Es Buah Subasuka</span>
+                            <span class="font-bold text-gray-900">Rp 36.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Es Kacang Hijau Subasuka</span>
+                            <span class="font-bold text-gray-900">Rp 38.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Es Saboak Gula Aren</span>
+                            <span class="font-bold text-gray-900">Rp 23.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialty -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4 uppercase tracking-widest text-teal-600 text-sm">Specialty Ice</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Es Cinderella Smile</span>
+                            <span class="font-bold text-gray-900">Rp 30.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Es Jantung Hati</span>
+                            <span class="font-bold text-gray-900">Rp 30.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Es Jatuh Cinta</span>
+                            <span class="font-bold text-gray-900">Rp 30.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Es Kasih Sayang</span>
+                            <span class="font-bold text-gray-900">Rp 30.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Juices & Classics -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4 uppercase tracking-widest text-blue-500 text-sm">Juice & Classic</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Juice Alpukat / Sirsak</span>
+                            <span class="font-bold text-gray-900">Rp 33.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Lemon / Orange Squash</span>
+                            <span class="font-bold text-gray-900">Rp 30.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Es Kelapa Muda</span>
+                            <span class="font-bold text-gray-900">Rp 25.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Es Teh Manis</span>
+                            <span class="font-bold text-gray-900">Rp 7.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12 bg-orange-50 p-6 rounded-2xl reveal-on-scroll">
+            <p class="text-gray-600 italic">Harga dapat berubah sewaktu-waktu dan mungkin belum termasuk pajak/layanan.<br>Nikmati juga menu **Flash Sale** (seperti Mie Goreng Khas Kupang) dengan harga spesial setiap pukul 12.00 - 16.00 WITA!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark pt-12 pb-6 text-white text-center">
+        <p class="text-gray-500 text-sm">&copy;Lekomese Studio 2026. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
